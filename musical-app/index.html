@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un
+documento de HTML-->
+
+<html lang="es"><!--Aqui inicia mi página con a etiqueta html-->
+<head> <!--Aqui en el head esta todo lo que no es visible en la pagima pero lo hace funcional->
+<---Con los metadatos puede colocar caracteres especiale, dar informacion al SEO para posicionarme-->
+<meta charset="UTF-8"> <!--Permite caracteres especiales-->
+  <meta name="description" content="Musical para Navidad">
+  <meta name="author" content="Leonardo Rodriguez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 <title>Musical Leo</title>
 </head>
 <body>
 
-<h1>Musical Leo</h1>
-<p>Escucha mis 3 canciones de POP.</p>
+<div class ="container-musical">
+    <img src="Olivia.jpg" alt="Imagen de Olivia" class="imagen-portada">
 
+    <h1>Musical Leo</h1>
+    <p/class="pmusical">Escucha mis 3 Canciones</p>
+     <div class="lista-canciones">
+        <!--CANCION-->
+        <div class="Cancion 1">
+            <p>The Cure</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="the cure.mp3" type="audio/mpeg">
+                </audio>
+
+        </div><div class="Cancion 2">
+            <p> 1 step forward and 3 steps back</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="1 step forward, 3 steps back.mp3" type="audio/mpeg">
+                </audio>
+
+        </div>  </div><div class="Cancion 3">
+            <p>Teenage Dream</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="teenage dream.mp3" type="audio/mpeg">
+                </audio>
+     
+     </div>
 </body>
 </html>
