@@ -19,30 +19,50 @@ documento de HTML-->
     <img src="Olivia.jpg" alt="Imagen de Olivia" class="imagen-portada">
 
     <h1>Musical Leo</h1>
-    <p/class="pmusical">Escucha mis 3 Canciones</p>
+    <p/class="pmusical">Escucha mis 3 Canciones</p>   
      <div class="lista-canciones">
-        <!--CANCION-->
-        <div class="Cancion 1">
-            <p>The Cure</p>
-             <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="the cure.mp3" type="audio/mpeg">
-                </audio>
 
-        </div><div class="Cancion 2">
+        <!--CANCION 1-->
+        <!-- <div class="Cancion 1">
+            <p>the cure</p>
+             <audio controls class="audio-player">
+                    <! -- Mp3 de prueba 1 -->
+                    <!-- <source src="the cure.mp3" type="audio/mpeg">
+                </audio>  -->
+        <!-- </div><div class="Cancion 2">
             <p> 1 step forward and 3 steps back</p>
              <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="1 step forward, 3 steps back.mp3" type="audio/mpeg">
+                    <! -- Mp3 de prueba 1 -->
+                    <!-- <source src="1step.mp3" type="audio/mpeg">
                 </audio>
 
         </div>  </div><div class="Cancion 3">
             <p>Teenage Dream</p>
              <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="teenage dream.mp3" type="audio/mpeg">
-                </audio>
+                    <! -- Mp3 de prueba 1 -->
+                   <!--  <source src="teenage dream.mp3" type="audio/mpeg">
+                </audio>  -->
      
-     </div>
+       <!--  </div>
+     </div>  -->
+     <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">The Cure</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="the cure.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
